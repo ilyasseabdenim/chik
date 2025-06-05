@@ -63,8 +63,8 @@ def ask():
         # Call the DeepSeek model
         response = client.complete(
             messages=conversations[session_id],
-            model="meta/Llama-4-Scout-17B-16E-Instruct",  # Make sure this matches your deployment name
-            max_tokens=100000,
+            model="openai/gpt-4o",  # Make sure this matches your deployment name
+            max_tokens=4096,
             temperature=0.8,
         )
         

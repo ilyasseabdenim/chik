@@ -63,7 +63,7 @@ def ask():
         # Call the DeepSeek model
         response = client.complete(
             messages=conversations[session_id],
-            model="deepseek/DeepSeek-V3-0324",  # Make sure this matches your deployment name
+            model="meta/Llama-4-Scout-17B-16E-Instruct",  # Make sure this matches your deployment name
             max_tokens=100000,
             temperature=0.8,
         )
